@@ -1,9 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { MovieCard } from "./components/MovieCard"
+import { Home } from "./pages/Home"
 
 function App() {
   return (
     <>
-    <MovieCard />
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
