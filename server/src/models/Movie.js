@@ -10,4 +10,4 @@ const movieSchema = new mongoose.Schema({
     overview: { type: String },
   });
 
-  module.export  = mongoose.model('Movie', movieSchema);
+  module.exports  = mongoose.model('Movie', movieSchema);
